@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1, h2 {
+    margin-top: 0;
+    word-break: break-all;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+code, code * {
+    font-family: monospace !important;
+}
+
+.editor-container {
+    background: #1f7cd8;
+    padding: 30px;
+}
+
+.editor-container > * {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.output-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+label {
+}
+
+label input {
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+label .description {
+    color: grey;
+    font-size: 13px;
+}
+
+.output {
+    margin-top: 40px;
+    font-family: monospace;
+    color: #333;
+    background: #efefef;
+    padding: 20px 20px 10px;
+}
+
+.output > * {
+    margin-bottom: 10px;
+}
+
+.output .label {
+    color: #868686;
+    margin-right: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.output .value {
+    color: black;
+}

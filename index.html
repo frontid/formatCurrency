@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Number.formatCurrency() sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/sample.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+</head>
+
+<body>
+
+<div class="editor-container">
+  <div class="heading">
+    <h1>Number.formatCurrency() sample</h1>
+    <p>formatCurrency() is a wrapper for <i>Intl.NumberFormat()</i> making easy format amounts.</p>
+  </div>
+
+</div>
+
+<div class="output-container">
+
+  <p>Basic usage:</p>
+
+  <pre><code class="xml">
+<script src="js/currency-formatter.js"></script>
+</code></pre>
+
+<pre><code class="javascript">
+// See the source code for allowed params.
+123456789.formatCurrency();
+
+</code></pre>
+
+  <label>
+    Try it!
+    <div>
+      <input type="number" value="500666.1234">
+      <select id="currency_selected">
+        <option value="EUR" selected>EUR</option>
+        <option value="USD">USD</option>
+      </select>
+      <select id="locale_selected">
+        <option value="en-US" selected>English USA</option>
+        <option value="ar-EG">Arabic Egypt</option>
+        <option value="es-ES">Spanish Spain</option>
+        <option value="en-AR">Spanish Argentine</option>
+        <option value="de-DE">German</option>
+      </select>
+      <button>Format</button>
+    </div>
+    <span class="description">Write an integer or decimal value and see the result below.</span>
+  </label>
+
+  <div class="output">
+    <div>
+      <span class="label">EUR</span><span class="value">300</span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.querySelectorAll("code").forEach(function (element) {
+    element.innerHTML = element.innerHTML
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  });
+</script>
+
+<script src="../currency-formatter.js"></script>
+<script src="./js/sample.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
